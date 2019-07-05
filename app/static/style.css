@@ -8,20 +8,18 @@ body {
 
 .center {
     margin: auto;
-    padding: 10px;
-    padding-left:50px;
-    padding-right:50px;
+    padding: 10px 50px;
     text-align: center;
     font-size: 14px;
-    font-family: Courier new;
+    font-family: Arial;
 }
 
 .title {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 1em;
     margin-bottom: 1em;
     color: #262626;
-    font-family: Century Gothic;
+    font-family: Trebuchet MS;
 }
 
 .content {
@@ -35,32 +33,36 @@ body {
 .upload-label {
     padding: 10px;
     font-size: 12px;
-    font-family: Arial;
 }
 
 .result-label {
     margin-top: 0.5em;
     padding: 10px;
     font-size: 13px;
-    font-family: Arial;
 }
 
 button.choose-file-button {
-  width: 200px;
-  height: 40px;
-  border-radius: 2px;
-  background-color: #ffffff;
-  border: solid 1px #E91E63;
-  font-size: 13px;
-  color: black;
+    width: 200px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #E91E63;
+    font-size: 13px;
+    color: #E91E63;
+    font-family: Arial;
 }
 
 button.analyze-button {
     width: 200px;
     height: 40px;
+    border: solid 1px #E91E63;
+    border-radius: 2px;
     background-color: #E91E63;
     font-size: 13px;
     color: #ffffff;
+    font-family: Arial;
 }
 
-button:focus {outline:0;}
+button:focus {
+    outline: 0;
+}
