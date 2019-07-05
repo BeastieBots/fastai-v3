@@ -1,47 +1,42 @@
 <html lang='en'>
 <head>
-    <meta charset='utf-8'>
-    <link rel='stylesheet' href='../static/style.css'>
-    <script src='../static/client.js'></script>
+  <meta charset='utf-8'>
+  <meta name='viewport' content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
 </head>
 <body>
 <div>
-    <div class='center'>
-        <div class='title'>DIM SUM DETECTIVE 🔎</div>
-        <p>
-            Press 'Select Image' to choose a photo or take a new one!
-        </p>
-        <p>
-            Works best with one kind of dim sum per photo!
-        </p>
-        <p>
-            *Current Beta version can identify shrimp dumplings (har gow), pork and shrimp dumplings (siu mai), soup dumplings (xiao long bao), and steamed bbq pork buns (char siu bao)
-        </p>
-
-        <div class='content'>
-            <div class='no-display'>
-                <input id='file-input'
-                       class='no-display'
-                       type='file'
-                       name='file'
-                       accept='image/*'
-                       onchange='showPicked(this)'>
-            </div>
-            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-            <div class='upload-label'>
-                <label id='upload-label'>No file chosen</label>
-            </div>
-            <div>
-                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-            </div>
-            <div class='analyze'>
-                <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-            </div>
-            <div class='result-label'>
-                <label id='result-label'></label>
-            </div>
-        </div>
+  <div class='center'>
+    <div class='title'>DIM SUM DETECTIVE</div>
+    <p>
+      1. Press 'Select Image' to choose a photo or take a new one
+    </p>
+    <p> 2. Press 'Analyze'. Works best with one kind of dim sum at a time!</p>
+    <div class='content'>
+      <div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+      </div>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <div class='upload-label'>
+        <label id='upload-label'>No file chosen</label>
+      </div>
+      <div>
+        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+      </div>
+      <div class='analyze'>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+      </div>
+      <div class='result-label'>
+        <label id='result-label'></label>
+      </div>
     </div>
+  </div>
 </div>
 </body>
 </html>
