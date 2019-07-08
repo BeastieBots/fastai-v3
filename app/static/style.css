@@ -8,6 +8,8 @@ body {
 
 .center {
     margin: auto;
+    margin-top: .5em;
+    margin-bottom: .5px;
     padding: 10px 50px;
     text-align: center;
     font-size: 14px;
